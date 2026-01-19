@@ -30,6 +30,12 @@ export interface MenuItemSize {
   originalPrice?: number;
 }
 
+export interface Allergen {
+  id: string;
+  name: LocalizedString;
+  icon: string;
+}
+
 export interface MenuItem {
   id: string;
   categoryId: string;
@@ -39,6 +45,7 @@ export interface MenuItem {
   originalPrice?: number;
   image: string;
   tags: string[];
+  allergens?: string[];
   sizes?: MenuItemSize[];
   available: boolean;
 }
@@ -46,5 +53,6 @@ export interface MenuItem {
 export interface MenuData {
   restaurant: Restaurant;
   categories: Category[];
+  allergens?: Allergen[];
   items: MenuItem[];
 }

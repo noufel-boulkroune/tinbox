@@ -6,6 +6,7 @@ import { MenuSection } from './components/MenuSection';
 import { MenuCard } from './components/MenuCard';
 import { ItemModal } from './components/ItemModal';
 import { EmptyState } from './components/EmptyState';
+import { AllergenFilter } from './components/AllergenFilter';
 import { useMenu } from './hooks/useMenu';
 import { useScrollSpy } from './hooks/useScrollSpy';
 import type { MenuItem } from './types';
@@ -14,6 +15,7 @@ export default function App() {
   const {
     restaurant,
     categories,
+    allergens,
     items,
     groupedItems,
     searchQuery,
@@ -21,8 +23,12 @@ export default function App() {
     clearSearch,
     activeCategory,
     setActiveCategory,
+    selectedAllergens,
+    toggleAllergen,
+    clearAllergens,
     filteredCount,
     isSearching,
+    isFiltering,
   } = useMenu();
 
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
@@ -50,16 +56,29 @@ export default function App() {
       {/* Header */}
       <Header restaurant={restaurant} />
 
-      {/* Search Bar */}
+      {/* Search Bar with Allergen Filter */}
       <div className="bg-white border-b border-surface-200 sticky top-[72px] z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <div className="max-w-xl mx-auto lg:max-w-2xl">
-            <SearchBar
-              value={searchQuery}
-              onChange={setSearchQuery}
-              onClear={clearSearch}
-              resultCount={isSearching ? filteredCount : undefined}
-            />
+          <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
+            {/* Allergen Filter */}
+            <div className="shrink-0">
+              <AllergenFilter
+                allergens={allergens}
+                selectedAllergens={selectedAllergens}
+                onToggleAllergen={toggleAllergen}
+                onClearAll={clearAllergens}
+              />
+            </div>
+
+            {/* Search Bar */}
+            <div className="flex-1 max-w-xl lg:max-w-2xl">
+              <SearchBar
+                value={searchQuery}
+                onChange={setSearchQuery}
+                onClear={clearSearch}
+                resultCount={(isSearching || isFiltering) ? filteredCount : undefined}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -92,7 +111,7 @@ export default function App() {
             {groupedItems && categories.map((category) => {
               const categoryItems = groupedItems[category.id];
               if (!categoryItems || categoryItems.length === 0) return null;
-              
+
               return (
                 <MenuSection
                   key={category.id}

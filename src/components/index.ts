@@ -6,3 +6,4 @@ export { MenuCard } from './MenuCard';
 export { MenuSection } from './MenuSection';
 export { ItemModal } from './ItemModal';
 export { EmptyState } from './EmptyState';
+export { AllergenFilter } from './AllergenFilter';

@@ -77,7 +77,7 @@ export function CategoryNav({ categories, activeCategory, onCategoryClick }: Cat
   }, [activeCategory]);
 
   return (
-    <div className="bg-white border-b border-surface-200 sticky top-[132px] sm:top-[140px] z-40">
+    <div className="bg-white border-b border-surface-200 sticky top-[140px] sm:top-[136px] z-40">
       <div className="max-w-7xl mx-auto">
         <nav
           ref={navRef}
