@@ -1,0 +1,919 @@
+{
+  "restaurant": {
+    "name": "TINBOX Constantine",
+    "tagline": "Burgers Artisanaux Gourmets - Cuisson à la Pierre Volcanique",
+    "description": "🍔 Burgers Artisanals Gourmets 👨‍🍳\nCuissons à la pierre Volcanique 🌋\nOuvert chaque jour de 11h00 à 22h00 et Vendredi de 17h00 à 22h00.",
+    "logo": "https://cookie.menu/api/restaurants/68404017c32c8735c7cc5eb3/files/logos/7af6bce6b8a032300d09ba01e30cae68",
+    "backgroundImage": "https://cookie.menu/api/restaurants/68404017c32c8735c7cc5eb3/files/background-img/c51e60990ed370d7e884b2852b44dad0",
+    "address": "5 Coop Immosalem, UV Nouvelle ville Ali Mendjeli, 25000 Constantine",
+    "phone": "+213 549 66 86 86",
+    "hours": {
+      "monday": "11:00 - 22:00",
+      "tuesday": "11:00 - 22:00",
+      "wednesday": "11:00 - 22:00",
+      "thursday": "11:00 - 22:00",
+      "friday": "17:00 - 22:00",
+      "saturday": "11:00 - 22:00",
+      "sunday": "11:00 - 22:00"
+    },
+    "services": ["takeaway"]
+  },
+  "allergens": [
+    { "id": "nuts", "name": { "en": "Tree Nuts", "fr": "Fruits à coques", "ar": "مكسرات" }, "icon": "🥜" },
+    { "id": "celery", "name": { "en": "Celery", "fr": "Céleri", "ar": "كرفس" }, "icon": "🥬" },
+    { "id": "eggs", "name": { "en": "Eggs", "fr": "Oeufs", "ar": "بيض" }, "icon": "🥚" },
+    { "id": "fish", "name": { "en": "Fish", "fr": "Poissons", "ar": "سمك" }, "icon": "🐟" },
+    { "id": "soy", "name": { "en": "Soy", "fr": "Soja", "ar": "صويا" }, "icon": "🫘" },
+    { "id": "mustard", "name": { "en": "Mustard", "fr": "Moutarde", "ar": "خردل" }, "icon": "🟡" },
+    { "id": "sulfites", "name": { "en": "Sulfites", "fr": "Sulfites", "ar": "كبريتات" }, "icon": "⚗️" },
+    { "id": "peanuts", "name": { "en": "Peanuts", "fr": "Arachides", "ar": "فول سوداني" }, "icon": "🥜" },
+    { "id": "gluten", "name": { "en": "Gluten", "fr": "Céréales", "ar": "غلوتين" }, "icon": "🌾" },
+    { "id": "crustaceans", "name": { "en": "Crustaceans", "fr": "Crustacés", "ar": "قشريات" }, "icon": "🦐" },
+    { "id": "dairy", "name": { "en": "Dairy", "fr": "Lait", "ar": "حليب" }, "icon": "🥛" },
+    { "id": "lupin", "name": { "en": "Lupin", "fr": "Lupin", "ar": "ترمس" }, "icon": "🌱" },
+    { "id": "mollusks", "name": { "en": "Mollusks", "fr": "Mollusques", "ar": "رخويات" }, "icon": "🦪" },
+    { "id": "sesame", "name": { "en": "Sesame", "fr": "Sésame", "ar": "سمسم" }, "icon": "⚪" },
+    { "id": "garlic", "name": { "en": "Garlic", "fr": "Ail", "ar": "ثوم" }, "icon": "🧄" },
+    { "id": "onion", "name": { "en": "Onion", "fr": "Oignons", "ar": "بصل" }, "icon": "🧅" }
+  ],
+  "categories": [
+    {
+      "id": "starters",
+      "name": {
+        "en": "Starters & Salads",
+        "fr": "Entrées et Salades",
+        "ar": "مقبلات وسلطات"
+      },
+      "icon": "salad"
+    },
+    {
+      "id": "pasta",
+      "name": {
+        "en": "Pasta",
+        "fr": "Pasta",
+        "ar": "باستا"
+      },
+      "icon": "pasta"
+    },
+    {
+      "id": "burgers",
+      "name": {
+        "en": "Burgers",
+        "fr": "Burgers",
+        "ar": "برغر"
+      },
+      "icon": "burger"
+    },
+    {
+      "id": "sandwiches",
+      "name": {
+        "en": "Sandwiches",
+        "fr": "Sandwichs",
+        "ar": "سندويشات"
+      },
+      "icon": "sandwich"
+    },
+    {
+      "id": "tacos",
+      "name": {
+        "en": "Tacos",
+        "fr": "Tacos",
+        "ar": "تاكوس"
+      },
+      "icon": "taco"
+    },
+    {
+      "id": "platters",
+      "name": {
+        "en": "Platters",
+        "fr": "Assiettes",
+        "ar": "أطباق"
+      },
+      "icon": "platter"
+    },
+    {
+      "id": "sides",
+      "name": {
+        "en": "Sides",
+        "fr": "Accompagnements",
+        "ar": "إضافات"
+      },
+      "icon": "fries"
+    },
+    {
+      "id": "drinks",
+      "name": {
+        "en": "Drinks",
+        "fr": "Boissons",
+        "ar": "مشروبات"
+      },
+      "icon": "drink"
+    },
+    {
+      "id": "desserts",
+      "name": {
+        "en": "Desserts",
+        "fr": "Desserts",
+        "ar": "حلويات"
+      },
+      "icon": "dessert"
+    }
+  ],
+  "items": [
+    {
+      "id": "1",
+      "categoryId": "starters",
+      "name": { "en": "Burrata", "fr": "Burrata", "ar": "بوراتا" },
+      "description": { "en": "Burrata with assorted raw vegetables", "fr": "Burrata, Assortiment de crudités", "ar": "بوراتا مع تشكيلة خضار طازجة" },
+      "price": 950,
+      "image": "https://images.unsplash.com/photo-1626957341926-98752fc2ba90?w=400&h=300&fit=crop",
+      "allergens": ["dairy"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "2",
+      "categoryId": "starters",
+      "name": { "en": "Caesar Salad", "fr": "Salade César", "ar": "سلطة سيزر" },
+      "description": { "en": "Lettuce, Breaded Chicken, Croutons, Parmesan, Cheddar Cubes, Caesar Sauce", "fr": "Laitue, Poulet Pané, Croûtons, Parmesan, Cube de Cheddar, Sauce César", "ar": "خس، دجاج مقلي، خبز محمص، بارميزان، مكعبات شيدر، صلصة سيزر" },
+      "price": 650,
+      "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=300&fit=crop",
+      "allergens": ["dairy", "gluten", "eggs"],
+      "tags": ["popular"],
+      "available": true
+    },
+    {
+      "id": "3",
+      "categoryId": "starters",
+      "name": { "en": "Tomato Mozza", "fr": "Tomate Mozza", "ar": "طماطم موزاريلا" },
+      "description": { "en": "Tomato, Fresh Mozzarella, Pesto, Assorted raw vegetables", "fr": "Tomate, Mozzarella Fraîche, Pesto, Assortiment de crudités", "ar": "طماطم، موزاريلا طازجة، بيستو، تشكيلة خضار" },
+      "price": 700,
+      "image": "https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400&h=300&fit=crop",
+      "allergens": ["dairy", "nuts"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "4",
+      "categoryId": "starters",
+      "name": { "en": "Mediterranean Salad", "fr": "Salade Méditerranéenne", "ar": "سلطة متوسطية" },
+      "description": { "en": "Lettuce, Sun-dried Tomatoes, Black Olives, Feta, Extra Virgin Olive Oil, Balsamic Vinegar", "fr": "Laitue, Tomate séchée à L'huile d'olive, Olives noirs, Fromage Fêta, Huile d'olive extra vierge, Vinaigre Balsamique", "ar": "خس، طماطم مجففة، زيتون أسود، فيتا، زيت زيتون، خل بلسمي" },
+      "price": 550,
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+      "allergens": ["dairy", "sulfites"],
+      "tags": ["vegetarian"],
+      "available": true
+    },
+    {
+      "id": "5",
+      "categoryId": "starters",
+      "name": { "en": "Niçoise Salad", "fr": "Salade Niçoise", "ar": "سلطة نيسواز" },
+      "description": { "en": "Lettuce, Tomato, Black Olives, Onions, Anchovies, Tuna, Egg, House Vinaigrette", "fr": "Laitue, Tomate, Olives noirs, Oignons, Anchois, Thon, Œuf, Vinaigrette Maison", "ar": "خس، طماطم، زيتون أسود، بصل، أنشوجة، تونة، بيض" },
+      "price": 650,
+      "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=300&fit=crop",
+      "allergens": ["fish", "eggs", "onion"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "6",
+      "categoryId": "starters",
+      "name": { "en": "Breaded Camembert", "fr": "Camembert Panée", "ar": "كاممبير مقلي" },
+      "description": { "en": "Breaded Camembert with assorted raw vegetables", "fr": "Camembert Panée, Assortiment de crudités", "ar": "كاممبير مقلي مع تشكيلة خضار" },
+      "price": 700,
+      "image": "https://images.unsplash.com/photo-1541529086526-db283c563270?w=400&h=300&fit=crop",
+      "allergens": ["dairy", "gluten", "eggs"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "7",
+      "categoryId": "starters",
+      "name": { "en": "Breaded Mozza", "fr": "Mozza Panée", "ar": "موزاريلا مقلية" },
+      "description": { "en": "Fresh breaded mozzarella with assorted raw vegetables", "fr": "Mozzarella fraîche panée, Assortiment de crudités", "ar": "موزاريلا طازجة مقلية مع تشكيلة خضار" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1531749668029-2db88e4276c7?w=400&h=300&fit=crop",
+      "allergens": ["dairy", "gluten", "eggs"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "8",
+      "categoryId": "starters",
+      "name": { "en": "Cheese Omelette", "fr": "Omelette Fromage", "ar": "أومليت بالجبن" },
+      "description": { "en": "Classic cheese omelette", "fr": "Omelette au fromage", "ar": "أومليت بالجبن الكلاسيكي" },
+      "price": 500,
+      "image": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=400&h=300&fit=crop",
+      "allergens": ["eggs", "dairy"],
+      "tags": ["vegetarian"],
+      "available": true
+    },
+    {
+      "id": "9",
+      "categoryId": "starters",
+      "name": { "en": "Cheese Mushroom Omelette", "fr": "Omelette Fromage Champignons", "ar": "أومليت بالجبن والفطر" },
+      "description": { "en": "Cheese and mushroom omelette", "fr": "Omelette au fromage et champignons", "ar": "أومليت بالجبن والفطر" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1612240498936-65f5101365d2?w=400&h=300&fit=crop",
+      "allergens": ["eggs", "dairy"],
+      "tags": ["vegetarian"],
+      "available": true
+    },
+    {
+      "id": "10",
+      "categoryId": "starters",
+      "name": { "en": "Breaded Burrata", "fr": "Burrata Panée", "ar": "بوراتا مقلية" },
+      "description": { "en": "Breaded burrata stuffed with pesto, with assorted raw vegetables", "fr": "Burrata panée, fourrée au pesto, avec assortiment de crudités", "ar": "بوراتا مقلية محشوة بالبيستو مع تشكيلة خضار" },
+      "price": 1100,
+      "image": "https://images.unsplash.com/photo-1505575967455-40e256f73376?w=400&h=300&fit=crop",
+      "allergens": ["dairy", "gluten", "eggs", "nuts"],
+      "tags": ["new"],
+      "available": true
+    },
+    {
+      "id": "11",
+      "categoryId": "starters",
+      "name": { "en": "Krousty Thai", "fr": "Krousty Thaï", "ar": "كراوستي تاي" },
+      "description": { "en": "120g Crispy breaded chicken, fragrant rice, Thai sauce & White Sabaï sauce, garnished with chives and fried onions", "fr": "120g de Poulet pané croustillant, riz parfumé, sauce Thaï & sauce Blanche Sabaï, garni de ciboulette et oignons frits", "ar": "120غ دجاج مقرمش، أرز معطر، صلصة تايلندية وصلصة بيضاء ساباي" },
+      "price": 750,
+      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "soy", "onion"],
+      "tags": ["new", "spicy"],
+      "available": true
+    },
+    {
+      "id": "12",
+      "categoryId": "pasta",
+      "name": { "en": "Pasta Pesto", "fr": "Pasta Pesto", "ar": "باستا بيستو" },
+      "description": { "en": "Pesto, Olive Oil, Parmesan, Dried Chives", "fr": "Pesto, Huile D'Olives, Parmesan, Ciboulettes séché", "ar": "بيستو، زيت زيتون، بارميزان، ثوم معمر مجفف" },
+      "price": 1000,
+      "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "nuts"],
+      "tags": ["vegetarian"],
+      "available": true
+    },
+    {
+      "id": "13",
+      "categoryId": "pasta",
+      "name": { "en": "Four Cheese Pasta", "fr": "Quatre Fromages", "ar": "باستا أربع أجبان" },
+      "description": { "en": "Mild Roquefort (with Mascarpone), Parmesan, Mozzarella, Gruyère", "fr": "Roquefort Doux (au Mascarpone), Parmesan, Mozzarella, Gruyère", "ar": "روكفور خفيف، بارميزان، موزاريلا، غرويير" },
+      "price": 1000,
+      "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy"],
+      "tags": ["vegetarian"],
+      "available": true
+    },
+    {
+      "id": "14",
+      "categoryId": "pasta",
+      "name": { "en": "Chicken Mushroom Pasta", "fr": "Pasta Poulet Champignons", "ar": "باستا دجاج وفطر" },
+      "description": { "en": "White Sauce, Fresh Mushrooms, Chicken, Gruyère", "fr": "Sauce Blanche, Champignons Frais, Poulet, Gruyère", "ar": "صلصة بيضاء، فطر طازج، دجاج، غرويير" },
+      "price": 800,
+      "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy"],
+      "tags": ["popular"],
+      "available": true
+    },
+    {
+      "id": "15",
+      "categoryId": "burgers",
+      "name": { "en": "Classic Junior", "fr": "Classic Junior", "ar": "كلاسيك جونيور" },
+      "description": { "en": "50g Ground Beef, Lettuce, Tomatoes, Cheese, Mild Mayonnaise", "fr": "Bœuf Haché 50g, Laitue, Tomates, Fromage, Mayonnaise Douce", "ar": "50غ لحم بقري مفروم، خس، طماطم، جبن، مايونيز" },
+      "price": 300,
+      "originalPrice": 350,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "sesame"],
+      "tags": ["deal"],
+      "available": true
+    },
+    {
+      "id": "16",
+      "categoryId": "burgers",
+      "name": { "en": "Classic Burger", "fr": "Classic Burger", "ar": "كلاسيك برغر" },
+      "description": { "en": "Ground Beef, Lettuce, Tomatoes, Raw Onions, Gouda, Mild Mayonnaise", "fr": "Bœuf Haché, Laitue, Tomates, Oignons crus, Gouda, Mayonnaise Douce", "ar": "لحم بقري مفروم، خس، طماطم، بصل، جودة، مايونيز" },
+      "price": 500,
+      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": ["popular"],
+      "sizes": [{"label": "L", "price": 450}, {"label": "XL", "price": 550}],
+      "available": true
+    },
+    {
+      "id": "17",
+      "categoryId": "burgers",
+      "name": { "en": "Royal Cheese", "fr": "Royal Cheese", "ar": "رويال تشيز" },
+      "description": { "en": "Ground Beef, Pickles, Tomatoes, Raw Onions, Gouda, Mild Mayonnaise, Royal Cheese Sauce", "fr": "Bœuf Haché, Cornichons, Tomates, Oignons crus, Gouda, Mayonnaise Douce, Sauce Royal Cheese", "ar": "لحم بقري، مخلل، طماطم، بصل، جودة، مايونيز، صلصة رويال تشيز" },
+      "price": 500,
+      "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "L", "price": 500}, {"label": "XL", "price": 600}],
+      "available": true
+    },
+    {
+      "id": "18",
+      "categoryId": "burgers",
+      "name": { "en": "L.A Smash", "fr": "L.A Smash", "ar": "لوس أنجلوس سماش" },
+      "description": { "en": "Smashed Ground Beef, Sautéed Onions, Pickles, Cheese, Sweet American Mustard Sauce, Ketchup", "fr": "Bœuf Haché Smashé, Oignons sautés, Cornichons, Fromage, Sauce Moutarde Américaine Douce, Ketchup", "ar": "لحم بقري مسحوق، بصل مقلي، مخلل، جبن، صلصة خردل أمريكية، كاتشب" },
+      "price": 300,
+      "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "mustard", "onion", "sesame"],
+      "tags": ["bestseller", "deal"],
+      "sizes": [{"label": "Simple", "price": 300, "originalPrice": 400}, {"label": "Double", "price": 450, "originalPrice": 550}],
+      "available": true
+    },
+    {
+      "id": "19",
+      "categoryId": "burgers",
+      "name": { "en": "Big American Cheese", "fr": "Big American Cheese", "ar": "بيغ أمريكان تشيز" },
+      "description": { "en": "Ground Beef, Turkey Ham, Pickles, Tomatoes, Raw Onions, Gouda, Egg, Mild Mayonnaise, Royal Cheese Sauce", "fr": "Bœuf Haché, Jambon de Dinde, Cornichons, Tomates, Oignons crus, Gouda, Œuf, Mayonnaise Douce, Sauce Royal Cheese", "ar": "لحم بقري، جامبون ديك رومي، مخلل، طماطم، بصل، جودة، بيض، مايونيز" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": ["popular"],
+      "sizes": [{"label": "L", "price": 600}, {"label": "XL", "price": 700}],
+      "available": true
+    },
+    {
+      "id": "20",
+      "categoryId": "burgers",
+      "name": { "en": "Campagne", "fr": "Campagne", "ar": "كامباني" },
+      "description": { "en": "Ground Beef, Caramelized Onions, Fresh Mushrooms, Gouda, Fried Onions, Mild Mayonnaise", "fr": "Bœuf Haché, Oignons Caramélisés, Champignons Frais, Gouda, Oignons frits, Mayonnaise Douce", "ar": "لحم بقري، بصل مكرمل، فطر طازج، جودة، بصل مقلي، مايونيز" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "L", "price": 600}, {"label": "XL", "price": 700}],
+      "available": true
+    },
+    {
+      "id": "21",
+      "categoryId": "burgers",
+      "name": { "en": "Bleu", "fr": "Bleu", "ar": "بلو" },
+      "description": { "en": "Ground Beef, Caramelized Onions, Walnuts, Gouda, Roquefort Cream, Mild Mayonnaise", "fr": "Bœuf Haché, Oignons Caramélisés, Noix, Gouda, Crème de Roquefort, Mayonnaise Douce", "ar": "لحم بقري، بصل مكرمل، جوز، جودة، كريمة روكفور، مايونيز" },
+      "price": 550,
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "nuts", "onion", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "L", "price": 550}, {"label": "XL", "price": 650}],
+      "available": true
+    },
+    {
+      "id": "22",
+      "categoryId": "burgers",
+      "name": { "en": "Mexicain", "fr": "Mexicain", "ar": "مكسيكان" },
+      "description": { "en": "Ground Beef, Mexican Salad, Gouda, Chimichurri Sauce, Mild Mayonnaise, Sweet Chili Sauce", "fr": "Bœuf Haché, Salade Mexicaine, Gouda, Sauce Chimichurri, Mayonnaise Douce, Sauce Sweet Chili", "ar": "لحم بقري، سلطة مكسيكية، جودة، صلصة تشيميتشوري، مايونيز، صلصة سويت تشيلي" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "garlic", "sesame"],
+      "tags": ["spicy"],
+      "sizes": [{"label": "L", "price": 600}, {"label": "XL", "price": 700}],
+      "available": true
+    },
+    {
+      "id": "23",
+      "categoryId": "burgers",
+      "name": { "en": "Barbecue", "fr": "Barbecue", "ar": "باربيكيو" },
+      "description": { "en": "Ground Beef, Caramelized Onions, Turkey Ham, Onion Ring, Gouda, Mild Mayonnaise, BBQ Sauce", "fr": "Bœuf Haché, Oignons Caramélisés, Jambon de Dinde, Oignon Ring, Gouda, Mayonnaise Douce, Sauce BBQ", "ar": "لحم بقري، بصل مكرمل، جامبون ديك رومي، حلقة بصل، جودة، مايونيز، صلصة باربيكيو" },
+      "price": 550,
+      "image": "https://images.unsplash.com/photo-1608767221051-2b9d18f35a2f?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": ["popular"],
+      "sizes": [{"label": "L", "price": 550}, {"label": "XL", "price": 650}],
+      "available": true
+    },
+    {
+      "id": "24",
+      "categoryId": "burgers",
+      "name": { "en": "California", "fr": "California", "ar": "كاليفورنيا" },
+      "description": { "en": "Ground Beef, Arugula, Tomatoes, Avocado, Gouda, California Sauce", "fr": "Bœuf Haché, Roquette, Tomates, Avocat, Gouda, Sauce California", "ar": "لحم بقري، جرجير، طماطم، أفوكادو، جودة، صلصة كاليفورنيا" },
+      "price": 700,
+      "image": "https://images.unsplash.com/photo-1551782450-17144efb9c50?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "L", "price": 700}, {"label": "XL", "price": 800}],
+      "available": true
+    },
+    {
+      "id": "25",
+      "categoryId": "burgers",
+      "name": { "en": "Pesto Mozza", "fr": "Pesto Mozza", "ar": "بيستو موزا" },
+      "description": { "en": "Ground Beef, Arugula, Tomatoes, Mozzarella, Pesto, Mild Mayonnaise", "fr": "Bœuf Haché, Roquette, Tomates, Mozzarella, Pesto, Mayonnaise Douce", "ar": "لحم بقري، جرجير، طماطم، موزاريلا، بيستو، مايونيز" },
+      "price": 700,
+      "image": "https://images.unsplash.com/photo-1549611016-3a70d82b5040?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "nuts", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "L", "price": 700}, {"label": "XL", "price": 800}],
+      "available": true
+    },
+    {
+      "id": "26",
+      "categoryId": "burgers",
+      "name": { "en": "Tapenade", "fr": "Tapenade", "ar": "تابيناد" },
+      "description": { "en": "Ground Beef, Arugula, Sun-dried Tomatoes, Gruyère Crisp, Olive Tapenade, Mild Mayonnaise", "fr": "Bœuf Haché, Roquette, Tomates Séchés, Tuile de Gruyère, Tapenade d'Olive, Mayonnaise Douce", "ar": "لحم بقري، جرجير، طماطم مجففة، غرويير، تابيناد زيتون، مايونيز" },
+      "price": 550,
+      "image": "https://images.unsplash.com/photo-1596956470007-2bf6095e7e16?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "L", "price": 550}, {"label": "XL", "price": 650}],
+      "available": true
+    },
+    {
+      "id": "27",
+      "categoryId": "burgers",
+      "name": { "en": "Poulet Basquaise", "fr": "Poulet Basquaise", "ar": "دجاج باسكي" },
+      "description": { "en": "Ground Chicken, Arugula, Pepper Piperade, Chorizo, Gouda, Mild Mayonnaise", "fr": "Poulet Haché, Roquette, Piperade de poivrons, Chorizo, Gouda, Mayonnaise Douce", "ar": "دجاج مفروم، جرجير، فلفل ملون، شوريزو، جودة، مايونيز" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1606131731446-5568d87113aa?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "L", "price": 600}, {"label": "XL", "price": 700}],
+      "available": true
+    },
+    {
+      "id": "28",
+      "categoryId": "burgers",
+      "name": { "en": "Crispy", "fr": "Crispy", "ar": "كريسبي" },
+      "description": { "en": "120g Chicken breaded with spicy corn chips, Coleslaw, Cheddar Sauce", "fr": "Poulet Panné au Chips de Mais épicées 120g, Coleslaw, Sauce Cheddar", "ar": "120غ دجاج مقلي برقائق الذرة الحارة، كولسلو، صلصة شيدر" },
+      "price": 500,
+      "originalPrice": 600,
+      "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "sesame"],
+      "tags": ["deal", "popular"],
+      "available": true
+    },
+    {
+      "id": "29",
+      "categoryId": "burgers",
+      "name": { "en": "Roquefort & Figs", "fr": "Roquefort et Figues", "ar": "روكفور وتين" },
+      "description": { "en": "Ground Beef, Caramelized Onions, Turkey Ham, Roquefort, Sautéed Figs, Mild Mayonnaise", "fr": "Bœuf Haché, Oignons Caramélisés, Jambon de Dinde, Roquefort, Figue Sautée, Mayonnaise Douce", "ar": "لحم بقري، بصل مكرمل، جامبون، روكفور، تين مقلي، مايونيز" },
+      "price": 650,
+      "image": "https://images.unsplash.com/photo-1603064752734-4c48eff53d05?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "L", "price": 650}, {"label": "XL", "price": 750}],
+      "available": true
+    },
+    {
+      "id": "30",
+      "categoryId": "burgers",
+      "name": { "en": "Blackstar", "fr": "Blackstar", "ar": "بلاك ستار" },
+      "description": { "en": "Ground Beef, Baby Spinach, Sautéed Onions, Raw Onions, Pickles, Gouda, Homemade BBQ Sauce with Grilled Turkey Bacon, Pastrami, Citrus Mayonnaise", "fr": "Bœuf Haché, Pouces d'épinard, Oignons Sautés, Oignons Crus, Cornichons, Gouda, Sauce BBQ maison avec Bacon de Dinde Grillé, Pastrami, Mayonnaise au Agrumes", "ar": "لحم بقري، سبانخ، بصل مقلي، بصل طازج، مخلل، جودة، صلصة باربيكيو، باستورمي، مايونيز بالحمضيات" },
+      "price": 750,
+      "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": ["popular"],
+      "sizes": [{"label": "L", "price": 750}, {"label": "XL", "price": 800}],
+      "available": true
+    },
+    {
+      "id": "31",
+      "categoryId": "burgers",
+      "name": { "en": "Tony Burger", "fr": "Tony Burger", "ar": "توني برغر" },
+      "description": { "en": "150g Smashed Ground Beef, Cheese, Arugula, Turkey Ham, Onions Candied in Honey and Balsamic Vinegar", "fr": "Boeuf Haché Smaché 150g, Fromage, Roquette, Jambon de Dinde, Oignons Confits au Miel et au Vinaigre Balsamique", "ar": "150غ لحم بقري مسحوق، جبن، جرجير، جامبون، بصل معسل بالخل البلسمي" },
+      "price": 650,
+      "image": "https://images.unsplash.com/photo-1598182198871-d3f4ab4fd181?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "onion", "sulfites", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "Double", "price": 650}, {"label": "Triple", "price": 800}],
+      "available": true
+    },
+    {
+      "id": "32",
+      "categoryId": "burgers",
+      "name": { "en": "Le Carnivore", "fr": "Le Carnivore", "ar": "الكارنيفور" },
+      "description": { "en": "Ground Beef, Turkey Ham, Pastrami, Chorizo, Pepper Sauce, Mild Mayonnaise", "fr": "Bœuf Haché, Jambon de Dinde, Pastrami, Chorizo, Sauce au Poivre, Mayonnaise Douce", "ar": "لحم بقري، جامبون، باستورمي، شوريزو، صلصة فلفل، مايونيز" },
+      "price": 800,
+      "image": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "sesame"],
+      "tags": ["popular"],
+      "sizes": [{"label": "L", "price": 800}, {"label": "XL", "price": 900}],
+      "available": true
+    },
+    {
+      "id": "33",
+      "categoryId": "burgers",
+      "name": { "en": "Mushroom Mississippi", "fr": "Mushroom Mississippi", "ar": "مشروم ميسيسيبي" },
+      "description": { "en": "Ground Beef, Fresh Mushrooms, Onion Ring, Gouda, Cheddar Sauce, Mild Mayonnaise", "fr": "Bœuf Haché, Champignons Frais, Oignon Ring, Gouda, Sauce Cheddar, Mayonnaise Douce", "ar": "لحم بقري، فطر طازج، حلقة بصل، جودة، صلصة شيدر، مايونيز" },
+      "price": 650,
+      "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "L", "price": 650}, {"label": "XL", "price": 750}],
+      "available": true
+    },
+    {
+      "id": "34",
+      "categoryId": "burgers",
+      "name": { "en": "Texan", "fr": "TEXAN", "ar": "تكسان" },
+      "description": { "en": "Ground Beef, Fresh Mushrooms, Camembert, Breaded Gouda, Sautéed Onions, Mild Mayonnaise", "fr": "Bœuf Haché, Champignons Frais, Camembert, Gouda Pané, Oignons Sauté, Mayonnaise Douce", "ar": "لحم بقري، فطر طازج، كاممبير، جودة مقلي، بصل مقلي، مايونيز" },
+      "price": 700,
+      "image": "https://images.unsplash.com/photo-1582196016295-f8c8bd4b3a99?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "L", "price": 650}, {"label": "XL", "price": 750}],
+      "available": true
+    },
+    {
+      "id": "35",
+      "categoryId": "burgers",
+      "name": { "en": "Tartiflette", "fr": "Tartiflette", "ar": "تارتيفليت" },
+      "description": { "en": "Ground Beef, Caramelized Onions, Pastrami, Potato Chips, Parsley, Reblochon, Mild Mayonnaise", "fr": "Bœuf Haché, Oignons Caramélisés, Pastrami, Chips de Patate, Persillade, Reblochon, Mayonnaise Douce", "ar": "لحم بقري، بصل مكرمل، باستورمي، رقائق بطاطس، بقدونس، جبن ريبلوشون، مايونيز" },
+      "price": 750,
+      "image": "https://images.unsplash.com/photo-1547584370-2cc98b8b8dc8?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": [],
+      "sizes": [{"label": "L", "price": 750}, {"label": "XL", "price": 850}],
+      "available": true
+    },
+    {
+      "id": "36",
+      "categoryId": "burgers",
+      "name": { "en": "Philly Cheese", "fr": "Philly Cheese", "ar": "فيلي تشيز" },
+      "description": { "en": "Beef Fillet, Fresh Mushrooms, Sautéed Onions, Cheddar Sauce", "fr": "Filet de Bœuf, Champignons Frais, Oignons Sautés, Sauce Cheddar", "ar": "فيليه لحم بقري، فطر طازج، بصل مقلي، صلصة شيدر" },
+      "price": 900,
+      "image": "https://images.unsplash.com/photo-1615297928064-24977384d0da?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "onion", "sesame"],
+      "tags": ["popular"],
+      "available": true
+    },
+    {
+      "id": "37",
+      "categoryId": "burgers",
+      "name": { "en": "Supreme Philly Cheese", "fr": "Suprem Philly Cheese", "ar": "سوبريم فيلي تشيز" },
+      "description": { "en": "100g Ground Beef, 100g Beef Fillet, Fresh Mushrooms, Sautéed Onions, Cheddar Sauce", "fr": "Bœuf Haché 100g, Filet de Bœuf 100g, Champignons Frais, Oignons Sautés, Sauce Cheddar", "ar": "100غ لحم مفروم، 100غ فيليه، فطر طازج، بصل مقلي، صلصة شيدر" },
+      "price": 1100,
+      "image": "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "onion", "sesame"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "38",
+      "categoryId": "burgers",
+      "name": { "en": "Carné Burger", "fr": "Carné Burger", "ar": "كارني برغر" },
+      "description": { "en": "Beef Fillet, Arugula, Pepper Piperade, Chimichurri Sauce, Gouda", "fr": "Filet de Bœuf, Roquette, Piperade de Poivrons, Sauce Chimichurri, Gouda", "ar": "فيليه لحم، جرجير، فلفل ملون، صلصة تشيميتشوري، جودة" },
+      "price": 1000,
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "garlic", "sesame"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "39",
+      "categoryId": "burgers",
+      "name": { "en": "Supreme Carné", "fr": "Suprem Carné", "ar": "سوبريم كارني" },
+      "description": { "en": "100g Ground Beef, 100g Beef Fillet, Baby Spinach, Pepper Piperade, Chimichurri Sauce, Gouda", "fr": "Bœuf Haché 100g, Filet de Bœuf 100g, Pouces d'épinard, Piperade de Poivrons, Sauce Chimichurri, Gouda", "ar": "100غ لحم مفروم، 100غ فيليه، سبانخ، فلفل ملون، صلصة تشيميتشوري، جودة" },
+      "price": 1200,
+      "image": "https://images.unsplash.com/photo-1460306855393-0410f61241c7?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "garlic", "sesame"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "40",
+      "categoryId": "burgers",
+      "name": { "en": "Biggy Smash", "fr": "Biggy Smash", "ar": "بيغي سماش" },
+      "description": { "en": "Ground Beef, Lettuce, Tomatoes, Onions, Pickles, Double Slice, Cheddar Sauce, Breaded Mozzarella, Mild Mayonnaise", "fr": "Bœuf Haché, Laitue, Tomates, Oignons, Cornichons, Double Slice, Sauce Cheddar, Mozzarella Panée, Mayonaise Douce", "ar": "لحم بقري، خس، طماطم، بصل، مخلل، شريحتين جبن، صلصة شيدر، موزاريلا مقلية، مايونيز" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": ["popular"],
+      "sizes": [{"label": "Double", "price": 600}, {"label": "Triple", "price": 750}],
+      "available": true
+    },
+    {
+      "id": "41",
+      "categoryId": "burgers",
+      "name": { "en": "Egg Brisket Smash", "fr": "Egg Brisket Smash", "ar": "إيغ بريسكت سماش" },
+      "description": { "en": "Pure comfort, smoked version. Smashed beef steak, tender smoked brisket, perfectly cooked egg, all wrapped in double slice melted cheese on a bed of caramelized onions and mild mayonnaise", "fr": "Du pur réconfort, version fumée. Steak de bœuf smashé, brisket fumé fondant, œuf parfaitement cuit, le tout enveloppé de fromage fondant double slice sur lit d'oignons caramélisés et de mayonnaise douce", "ar": "راحة نقية، نسخة مدخنة. ستيك لحم مسحوق، بريسكت مدخن طري، بيض مطهو بإتقان، ملفوف بجبن ذائب مزدوج على طبقة من البصل المكرمل والمايونيز" },
+      "price": 650,
+      "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": ["new"],
+      "sizes": [{"label": "Double", "price": 650}, {"label": "Triple", "price": 800}],
+      "available": true
+    },
+    {
+      "id": "42",
+      "categoryId": "burgers",
+      "name": { "en": "Yellowstone Burger", "fr": "Yellowstone Burger", "ar": "يلوستون برغر" },
+      "description": { "en": "A fiery burger. Two perfectly smashed beef steaks, melted under two slices of double cheese, enhanced by jalapeños and crunchy pickles, topped with crispy fried onions and sweet chili & mild mayonnaise sauces", "fr": "Un burger au tempérament de feu. Deux steaks de bœuf smashés à la perfection, fondus sous deux tranches de double cheese, relevés par des jalapeños et des cornichons croquants, oignons frits croustillants et sauces sweet chili et mayonnaise douce", "ar": "برغر ناري. ستيكان من اللحم المسحوق، ذائبان تحت شريحتين من الجبن المزدوج، معززان بالهالابينو والمخلل المقرمش، مع بصل مقلي وصلصة سويت تشيلي ومايونيز" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": ["spicy", "new"],
+      "sizes": [{"label": "Double", "price": 600}, {"label": "Triple", "price": 750}],
+      "available": true
+    },
+    {
+      "id": "43",
+      "categoryId": "burgers",
+      "name": { "en": "Yaku-Bun", "fr": "YAKU-BUN", "ar": "ياكو-بان" },
+      "description": { "en": "Tender beef fillet snacked with teriyaki sauce, crunchy vegetables, mustard mayonnaise, fresh coriander", "fr": "Filet de bœuf fondant snacké à la sauce teriyaki, légumes croquants, mayonnaise à la moutarde, coriandre fraîche", "ar": "فيليه لحم طري مع صلصة تيرياكي، خضار مقرمشة، مايونيز بالخردل، كزبرة طازجة" },
+      "price": 1000,
+      "image": "https://images.unsplash.com/photo-1551782450-17144efb9c50?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "soy", "mustard", "sesame"],
+      "tags": ["new"],
+      "available": true
+    },
+    {
+      "id": "44",
+      "categoryId": "burgers",
+      "name": { "en": "Original White Manna", "fr": "Original White Manna Burger", "ar": "وايت مانا الأصلي" },
+      "description": { "en": "Inspired by the famous American diner, this Tin Box version revisits the slider-style burger: two steaks smashed on a bed of sliced onions that caramelize while fusing with the meat. Topped with 4 slices of melted cheese in an ultra-soft brioche bun", "fr": "Inspirée du célèbre diner américain, cette version Tin Box revisite le burger façon slider: deux steaks écrasés sur un lit d'oignons émincés qui caramélisent en fusionnant avec la viande. Nappé de 4 tranches de Fromage fondant dans un pain brioché ultra moelleux", "ar": "مستوحى من المطعم الأمريكي الشهير، نسخة تين بوكس تعيد ابتكار برغر السلايدر: ستيكان مسحوقان على طبقة من البصل المفروم الذي يتكرمل مع اللحم، مغطى بـ 4 شرائح جبن ذائب في خبز بريوش ناعم" },
+      "price": 500,
+      "originalPrice": 600,
+      "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion", "sesame"],
+      "tags": ["deal", "new", "bestseller"],
+      "available": true
+    },
+    {
+      "id": "45",
+      "categoryId": "burgers",
+      "name": { "en": "Le Chèvre-Miel", "fr": "Le Chèvre-Miel", "ar": "الماعز والعسل" },
+      "description": { "en": "A gourmet and elegant burger where warm goat cheese meets the sweetness of acacia honey, enhanced by a homemade honey-mustard cream sauce, candied onions, juicy steak, melted cheese and crispy fried onions for texture", "fr": "Un burger gourmand et élégant, où le chèvre chaud rencontre la douceur d'un miel d'acacia, relevé par une sauce miel-moutarde crémeuse faite maison, oignons confits, steak juteux, fromage fondant et oignons frits pour la texture", "ar": "برغر ذواق وأنيق، حيث يلتقي جبن الماعز الدافئ بحلاوة عسل الأكاسيا، معزز بصلصة عسل-خردل كريمية منزلية، بصل مسكر، ستيك طري، جبن ذائب وبصل مقلي للقرمشة" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1550317138-10000687a72b?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "mustard", "onion", "sesame"],
+      "tags": ["new"],
+      "available": true
+    },
+    {
+      "id": "46",
+      "categoryId": "sandwiches",
+      "name": { "en": "Paysan Beef", "fr": "Paysan Boeuf", "ar": "بايزان بقري" },
+      "description": { "en": "Ground Beef, Caramelized Onions, Fresh Mushrooms, Egg, Turkey Ham, Cheddar Sauce, Gouda, Mild Mayonnaise", "fr": "Bœuf Haché, Oignons Caramélisés, Champignons Frais, Œuf, Jambon de Dinde, Sauce Cheddar, Gouda, Mayonnaise Douce", "ar": "لحم بقري مفروم، بصل مكرمل، فطر طازج، بيض، جامبون، صلصة شيدر، جودة، مايونيز" },
+      "price": 650,
+      "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion"],
+      "tags": ["popular"],
+      "available": true
+    },
+    {
+      "id": "47",
+      "categoryId": "sandwiches",
+      "name": { "en": "Paysan Chicken", "fr": "Paysan Poulet", "ar": "بايزان دجاج" },
+      "description": { "en": "Ground Chicken, Caramelized Onions, Fresh Mushrooms, Egg, Turkey Ham, Cheddar Sauce, Gouda, Mild Mayonnaise", "fr": "Poulet Haché, Oignons Caramélisés, Champignons Frais, Œuf, Jambon de Dinde, Sauce Cheddar, Gouda, Mayonnaise Douce", "ar": "دجاج مفروم، بصل مكرمل، فطر طازج، بيض، جامبون، صلصة شيدر، جودة، مايونيز" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "48",
+      "categoryId": "sandwiches",
+      "name": { "en": "Paysan Mixed", "fr": "Paysan Mixte", "ar": "بايزان مكس" },
+      "description": { "en": "Ground Beef and Chicken, Caramelized Onions, Fresh Mushrooms, Egg, Turkey Ham, Cheddar Sauce, Gouda, Mild Mayonnaise", "fr": "Bœuf et Poulet Haché, Oignons Caramélisés, Champignons Frais, Œuf, Jambon de Dinde, Sauce Cheddar, Gouda, Mayonnaise Douce", "ar": "لحم بقري ودجاج مفروم، بصل مكرمل، فطر طازج، بيض، جامبون، صلصة شيدر، جودة، مايونيز" },
+      "price": 650,
+      "image": "https://images.unsplash.com/photo-1554433607-66b5efe9d304?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "49",
+      "categoryId": "sandwiches",
+      "name": { "en": "Paysan Merguez", "fr": "Paysan Merguez", "ar": "بايزان ميرغيز" },
+      "description": { "en": "Homemade Merguez, Caramelized Onions, Fresh Mushrooms, Egg, Turkey Ham, Cheddar Sauce, Gouda, Mild Mayonnaise", "fr": "Merguez Maison, Oignons Caramélisés, Champignons Frais, Œuf, Jambon de Dinde, Sauce Cheddar, Gouda, Mayonnaise Douce", "ar": "ميرغيز منزلي، بصل مكرمل، فطر طازج، بيض، جامبون، صلصة شيدر، جودة، مايونيز" },
+      "price": 700,
+      "image": "https://images.unsplash.com/photo-1619096252214-ef06c45683e3?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion"],
+      "tags": ["spicy"],
+      "available": true
+    },
+    {
+      "id": "50",
+      "categoryId": "sandwiches",
+      "name": { "en": "Carné Sandwich", "fr": "Sandwich Carné", "ar": "سندويش كارني" },
+      "description": { "en": "Beef Fillet, Arugula, Pepper Piperade, Chimichurri Sauce, Gouda", "fr": "Filet de Bœuf, Roquette, Piperade de Poivrons, Sauce Chimichurri, Gouda", "ar": "فيليه لحم، جرجير، فلفل ملون، صلصة تشيميتشوري، جودة" },
+      "price": 1000,
+      "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "garlic"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "51",
+      "categoryId": "sandwiches",
+      "name": { "en": "Tenders Subs", "fr": "Tenders Subs", "ar": "تندرز صب" },
+      "description": { "en": "Chicken Tenders, Onions, Lettuce, Tomato, Pickles, Gouda, Tartar Sauce", "fr": "Tenders de Poulet, Oignons, Laitue, Tomate, Cornichons, Gouda, Sauce Tartare", "ar": "تندرز دجاج، بصل، خس، طماطم، مخلل، جودة، صلصة تارتار" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1481070555726-e2fe8357571d?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "52",
+      "categoryId": "sandwiches",
+      "name": { "en": "Complete Beef", "fr": "Complet Boeuf", "ar": "كومبليت بقري" },
+      "description": { "en": "Ground Beef, Onions, Lettuce, Tomato, Egg, Fries, Melted Cheese, Mild Mayonnaise", "fr": "Bœuf Haché, Oignons, Laitue, Tomate, Œuf, Frites, Fromages Fondu, Mayonnaise Douce", "ar": "لحم بقري مفروم، بصل، خس، طماطم، بيض، بطاطس مقلية، جبن ذائب، مايونيز" },
+      "price": 500,
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion"],
+      "tags": ["popular"],
+      "available": true
+    },
+    {
+      "id": "53",
+      "categoryId": "sandwiches",
+      "name": { "en": "Complete Chicken", "fr": "Complet Poulet", "ar": "كومبليت دجاج" },
+      "description": { "en": "Ground Chicken, Onions, Lettuce, Tomato, Egg, Fries, Melted Cheese, Mild Mayonnaise", "fr": "Poulet Haché, Oignons, Laitue, Tomate, Œuf, Frites, Fromages Fondu, Mayonnaise Douce", "ar": "دجاج مفروم، بصل، خس، طماطم، بيض، بطاطس مقلية، جبن ذائب، مايونيز" },
+      "price": 450,
+      "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "54",
+      "categoryId": "sandwiches",
+      "name": { "en": "Complete Mixed", "fr": "Complet Mixte", "ar": "كومبليت مكس" },
+      "description": { "en": "Ground Beef and Chicken, Onions, Lettuce, Tomato, Egg, Fries, Melted Cheese, Mild Mayonnaise", "fr": "Bœuf et Poulet Haché, Oignons, Laitue, Tomate, Œuf, Frites, Fromages Fondu, Mayonnaise Douce", "ar": "لحم بقري ودجاج مفروم، بصل، خس، طماطم، بيض، بطاطس مقلية، جبن ذائب، مايونيز" },
+      "price": 500,
+      "image": "https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "55",
+      "categoryId": "sandwiches",
+      "name": { "en": "Complete Merguez", "fr": "Complet Merguez", "ar": "كومبليت ميرغيز" },
+      "description": { "en": "Homemade Merguez, Onions, Lettuce, Tomato, Egg, Fries, Melted Cheese, Mild Mayonnaise", "fr": "Merguez Maison, Oignons, Laitue, Tomate, Œuf, Frites, Fromages Fondu, Mayonnaise Douce", "ar": "ميرغيز منزلي، بصل، خس، طماطم، بيض، بطاطس مقلية، جبن ذائب، مايونيز" },
+      "price": 550,
+      "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy", "eggs", "onion"],
+      "tags": ["spicy"],
+      "available": true
+    },
+    {
+      "id": "56",
+      "categoryId": "tacos",
+      "name": { "en": "Tacos L", "fr": "Tacos L", "ar": "تاكوس L" },
+      "description": { "en": "Choice of meat, fries, cheese, sauce", "fr": "Viande au choix, frites, fromage, sauce", "ar": "لحم حسب الاختيار، بطاطس مقلية، جبن، صلصة" },
+      "price": 550,
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy"],
+      "tags": ["popular"],
+      "available": true
+    },
+    {
+      "id": "57",
+      "categoryId": "tacos",
+      "name": { "en": "Tacos XL", "fr": "Tacos XL", "ar": "تاكوس XL" },
+      "description": { "en": "Choice of meat, fries, cheese, sauce", "fr": "Viande au choix, frites, fromage, sauce", "ar": "لحم حسب الاختيار، بطاطس مقلية، جبن، صلصة" },
+      "price": 650,
+      "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "58",
+      "categoryId": "tacos",
+      "name": { "en": "Tacos XXL", "fr": "Tacos XXL", "ar": "تاكوس XXL" },
+      "description": { "en": "Choice of meat, fries, cheese, sauce", "fr": "Viande au choix, frites, fromage, sauce", "ar": "لحم حسب الاختيار، بطاطس مقلية، جبن، صلصة" },
+      "price": 800,
+      "image": "https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "dairy"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "59",
+      "categoryId": "platters",
+      "name": { "en": "Classic Platter", "fr": "Assiette Classic", "ar": "طبق كلاسيك" },
+      "description": { "en": "Ground beef, fries, salad, sauce", "fr": "Viande hachée, frites, salade, sauce", "ar": "لحم مفروم، بطاطس مقلية، سلطة، صلصة" },
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=400&h=300&fit=crop",
+      "allergens": ["eggs"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "60",
+      "categoryId": "platters",
+      "name": { "en": "Tenders Platter", "fr": "Assiette Tenders", "ar": "طبق تندرز" },
+      "description": { "en": "Chicken tenders, fries, salad, sauce", "fr": "Tenders de poulet, frites, salade, sauce", "ar": "تندرز دجاج، بطاطس مقلية، سلطة، صلصة" },
+      "price": 700,
+      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "eggs"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "61",
+      "categoryId": "sides",
+      "name": { "en": "French Fries", "fr": "Frites", "ar": "بطاطس مقلية" },
+      "description": { "en": "Crispy golden fries", "fr": "Frites dorées croustillantes", "ar": "بطاطس ذهبية مقرمشة" },
+      "price": 200,
+      "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop",
+      "allergens": [],
+      "tags": ["vegetarian"],
+      "available": true
+    },
+    {
+      "id": "62",
+      "categoryId": "sides",
+      "name": { "en": "Cheese Fries", "fr": "Frites Fromage", "ar": "بطاطس بالجبن" },
+      "description": { "en": "Fries with melted cheddar sauce", "fr": "Frites avec sauce cheddar fondue", "ar": "بطاطس مع صلصة شيدر ذائبة" },
+      "price": 350,
+      "image": "https://images.unsplash.com/photo-1585109649139-366815a0d713?w=400&h=300&fit=crop",
+      "allergens": ["dairy"],
+      "tags": ["vegetarian"],
+      "available": true
+    },
+    {
+      "id": "63",
+      "categoryId": "sides",
+      "name": { "en": "Onion Rings", "fr": "Onion Rings", "ar": "حلقات البصل" },
+      "description": { "en": "Crispy breaded onion rings", "fr": "Rondelles d'oignon panées croustillantes", "ar": "حلقات بصل مقرمشة" },
+      "price": 250,
+      "image": "https://images.unsplash.com/photo-1639024471283-03518883512d?w=400&h=300&fit=crop",
+      "allergens": ["gluten", "onion"],
+      "tags": ["vegetarian"],
+      "available": true
+    },
+    {
+      "id": "64",
+      "categoryId": "sides",
+      "name": { "en": "Nuggets (6 pcs)", "fr": "Nuggets (6 pcs)", "ar": "ناغتس (6 قطع)" },
+      "description": { "en": "Crispy chicken nuggets", "fr": "Nuggets de poulet croustillants", "ar": "ناغتس دجاج مقرمشة" },
+      "price": 350,
+      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop",
+      "allergens": ["gluten"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "65",
+      "categoryId": "drinks",
+      "name": { "en": "Soft Drink", "fr": "Boisson Gazeuse", "ar": "مشروب غازي" },
+      "description": { "en": "Coca-Cola, Fanta, Sprite, or Selecto", "fr": "Coca-Cola, Fanta, Sprite ou Selecto", "ar": "كوكا كولا، فانتا، سبرايت أو سيليكتو" },
+      "price": 100,
+      "image": "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=300&fit=crop",
+      "allergens": [],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "66",
+      "categoryId": "drinks",
+      "name": { "en": "Water", "fr": "Eau", "ar": "ماء" },
+      "description": { "en": "Mineral water", "fr": "Eau minérale", "ar": "ماء معدني" },
+      "price": 50,
+      "image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&h=300&fit=crop",
+      "allergens": [],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "67",
+      "categoryId": "drinks",
+      "name": { "en": "Juice", "fr": "Jus", "ar": "عصير" },
+      "description": { "en": "Orange or Apple juice", "fr": "Jus d'orange ou de pomme", "ar": "عصير برتقال أو تفاح" },
+      "price": 150,
+      "image": "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop",
+      "allergens": [],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "68",
+      "categoryId": "desserts",
+      "name": { "en": "Tiramisu", "fr": "Tiramisu", "ar": "تيراميسو" },
+      "description": { "en": "Classic Italian tiramisu", "fr": "Tiramisu italien classique", "ar": "تيراميسو إيطالي كلاسيكي" },
+      "price": 400,
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop",
+      "allergens": ["dairy", "eggs", "gluten"],
+      "tags": [],
+      "available": true
+    },
+    {
+      "id": "69",
+      "categoryId": "desserts",
+      "name": { "en": "Chocolate Fondant", "fr": "Fondant au Chocolat", "ar": "فوندان شوكولا" },
+      "description": { "en": "Warm chocolate lava cake", "fr": "Fondant au chocolat chaud", "ar": "كيك شوكولا ساخن" },
+      "price": 450,
+      "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&h=300&fit=crop",
+      "allergens": ["dairy", "eggs", "gluten"],
+      "tags": ["popular"],
+      "available": true
+    },
+    {
+      "id": "70",
+      "categoryId": "desserts",
+      "name": { "en": "Ice Cream", "fr": "Glace", "ar": "آيس كريم" },
+      "description": { "en": "2 scoops of your choice", "fr": "2 boules au choix", "ar": "كرتين حسب اختيارك" },
+      "price": 250,
+      "image": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=400&h=300&fit=crop",
+      "allergens": ["dairy"],
+      "tags": [],
+      "available": true
+    }
+  ]
+}
