@@ -16,14 +16,6 @@ export default defineConfig({
     // Optimize for production
     target: 'es2020',
     minify: 'esbuild',
-    rollupOptions: {
-      output: {
-        // Chunk splitting for better caching
-        manualChunks: {
-          react: ['react', 'react-dom'],
-        },
-      },
-    },
     // Enable source maps for debugging
     sourcemap: false,
     // Reduce chunk size warnings threshold
