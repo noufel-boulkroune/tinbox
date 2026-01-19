@@ -22,7 +22,7 @@ export function Header({ restaurant }: HeaderProps) {
   // Get today's hours
   const today = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
   const hoursValue = restaurant.hours[today];
-  const todayHours = hoursValue 
+  const todayHours = hoursValue
     ? (typeof hoursValue === 'string' ? hoursValue : hoursValue[language] || hoursValue.en)
     : t('header.closed');
 
@@ -36,8 +36,8 @@ export function Header({ restaurant }: HeaderProps) {
           <div className="flex items-center gap-3 sm:gap-4">
             {/* Logo */}
             {showLogo ? (
-              <img 
-                src={restaurant.logo} 
+              <img
+                src={restaurant.logo}
                 alt={restaurant.name}
                 className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl object-cover shadow-md"
                 onError={() => setLogoError(true)}
@@ -47,7 +47,7 @@ export function Header({ restaurant }: HeaderProps) {
                 <span className="text-white font-bold text-xl sm:text-2xl">T</span>
               </div>
             )}
-            
+
             {/* Name & tagline */}
             <div>
               <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-surface-900">
@@ -64,18 +64,17 @@ export function Header({ restaurant }: HeaderProps) {
             {/* Info button */}
             <button
               onClick={() => setShowInfo(!showInfo)}
-              className={`p-2 rounded-full transition-colors ${
-                restaurant.backgroundImage 
-                  ? 'bg-white/20 hover:bg-white/30 text-white' 
+              className={`p-2 rounded-full transition-colors ${restaurant.backgroundImage
+                  ? 'bg-white/20 hover:bg-white/30 text-white'
                   : 'hover:bg-surface-100 text-surface-600'
-              }`}
+                }`}
               aria-label="Restaurant information"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </button>
-            
+
             <LanguageSelector />
           </div>
         </div>
@@ -90,7 +89,7 @@ export function Header({ restaurant }: HeaderProps) {
                   {getLocalizedValue(restaurant.description)}
                 </p>
               )}
-              
+
               {/* Hours */}
               <div className="flex items-center gap-2 text-sm text-surface-600">
                 <svg className="w-4 h-4 text-primary-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
