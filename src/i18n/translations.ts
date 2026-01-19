@@ -39,6 +39,13 @@ export const translations: Record<Language, Record<string, string>> = {
     'misc.openNow': 'Open Now',
     'misc.closed': 'Closed',
     
+    // Header
+    'header.closed': 'Closed',
+    
+    // Tags
+    'tag.deal': 'Deal',
+    'tag.premium': 'Premium',
+    
     // Allergen Filter
     'filter.allergens': 'Allergen Filter',
     'filter.hideAllergens': 'Hide items containing:',
@@ -101,6 +108,13 @@ export const translations: Record<Language, Record<string, string>> = {
     'misc.openNow': 'Ouvert',
     'misc.closed': 'Fermé',
     
+    // Header
+    'header.closed': 'Fermé',
+    
+    // Tags
+    'tag.deal': 'Promo',
+    'tag.premium': 'Premium',
+    
     // Allergen Filter
     'filter.allergens': 'Filtre allergènes',
     'filter.hideAllergens': 'Masquer les plats contenant:',
@@ -162,6 +176,13 @@ export const translations: Record<Language, Record<string, string>> = {
     'misc.unavailable': 'غير متوفر',
     'misc.openNow': 'مفتوح الآن',
     'misc.closed': 'مغلق',
+    
+    // Header
+    'header.closed': 'مغلق',
+    
+    // Tags
+    'tag.deal': 'عرض',
+    'tag.premium': 'مميز',
     
     // Allergen Filter
     'filter.allergens': 'فلتر المواد المسببة للحساسية',

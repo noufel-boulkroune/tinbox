@@ -6,16 +6,22 @@ export interface LocalizedString {
   ar: string;
 }
 
+export interface LocalizedHours {
+  en: string;
+  fr: string;
+  ar: string;
+}
+
 export interface Restaurant {
   name: string;
-  tagline: string;
-  description?: string;
+  tagline: string | LocalizedString;
+  description?: string | LocalizedString;
   logo?: string;
   backgroundImage?: string;
-  address: string;
+  address: string | LocalizedString;
   phone: string;
-  hours: Record<string, string>;
-  services: string[];
+  hours: Record<string, string | LocalizedHours>;
+  services: string[] | Record<string, LocalizedString>;
 }
 
 export interface Category {

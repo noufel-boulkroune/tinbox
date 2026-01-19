@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import type { Restaurant } from '../types';
+import type { Restaurant, LocalizedString } from '../types';
 import { LanguageSelector } from './LanguageSelector';
 
 interface HeaderProps {
@@ -8,13 +8,23 @@ interface HeaderProps {
 }
 
 export function Header({ restaurant }: HeaderProps) {
-  const { t } = useLanguage();
+  const { t, localize, language } = useLanguage();
   const [showInfo, setShowInfo] = useState(false);
   const [logoError, setLogoError] = useState(false);
 
+  // Helper to get localized value or string
+  const getLocalizedValue = (value: string | LocalizedString | undefined): string => {
+    if (!value) return '';
+    if (typeof value === 'string') return value;
+    return localize(value);
+  };
+
   // Get today's hours
   const today = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
-  const todayHours = restaurant.hours[today] || 'Closed';
+  const hoursValue = restaurant.hours[today];
+  const todayHours = hoursValue 
+    ? (typeof hoursValue === 'string' ? hoursValue : hoursValue[language] || hoursValue.en)
+    : t('header.closed');
 
   const showLogo = restaurant.logo && !logoError;
 
@@ -44,7 +54,7 @@ export function Header({ restaurant }: HeaderProps) {
                 {restaurant.name}
               </h1>
               <p className="text-xs sm:text-sm text-surface-500 max-w-xs sm:max-w-md truncate">
-                {restaurant.tagline}
+                {getLocalizedValue(restaurant.tagline)}
               </p>
             </div>
           </div>
@@ -77,7 +87,7 @@ export function Header({ restaurant }: HeaderProps) {
               {/* Description */}
               {restaurant.description && (
                 <p className="text-sm text-surface-700 whitespace-pre-line">
-                  {restaurant.description}
+                  {getLocalizedValue(restaurant.description)}
                 </p>
               )}
               
@@ -96,7 +106,7 @@ export function Header({ restaurant }: HeaderProps) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>{restaurant.address}</span>
+                <span>{getLocalizedValue(restaurant.address)}</span>
               </div>
 
               {/* Phone */}
@@ -111,14 +121,25 @@ export function Header({ restaurant }: HeaderProps) {
 
               {/* Services */}
               <div className="flex items-center gap-2 pt-1">
-                {restaurant.services.map(service => (
-                  <span
-                    key={service}
-                    className="inline-flex items-center px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-xs font-medium"
-                  >
-                    {t(`service.${service}`)}
-                  </span>
-                ))}
+                {Array.isArray(restaurant.services) ? (
+                  restaurant.services.map(service => (
+                    <span
+                      key={service}
+                      className="inline-flex items-center px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-xs font-medium"
+                    >
+                      {t(`service.${service}`)}
+                    </span>
+                  ))
+                ) : (
+                  Object.entries(restaurant.services).map(([key, value]) => (
+                    <span
+                      key={key}
+                      className="inline-flex items-center px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-xs font-medium"
+                    >
+                      {localize(value)}
+                    </span>
+                  ))
+                )}
               </div>
             </div>
           </div>
