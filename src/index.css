@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px; /* Account for sticky header + search + nav */
+}
+
+body {
+  @apply bg-surface-50 text-surface-900 antialiased;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overscroll-behavior-y: contain;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Hide scrollbar for category nav but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth image loading */
+img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+img[data-loading="true"] {
+  opacity: 0;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary-500;
+}
+
+/* Safe area padding for notched devices */
+.safe-area-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.pb-safe-bottom {
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+}
+
+/* Card hover effect */
+.menu-card {
+  @apply transition-all duration-200;
+}
+
+.menu-card:hover {
+  @apply shadow-lg;
+}
+
+.menu-card:active {
+  @apply scale-[0.98];
+}
+
+/* Category chip active state */
+.category-chip {
+  @apply transition-all duration-200;
+}
+
+.category-chip.active {
+  @apply bg-primary-500 text-white shadow-md;
+}
+
+/* Search input focus */
+.search-input:focus {
+  @apply ring-2 ring-primary-500 ring-offset-0;
+}
+
+/* Loading skeleton animation */
+.skeleton {
+  @apply bg-surface-200 animate-pulse rounded;
+}
+
+/* RTL support for Arabic */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .category-nav {
+  direction: rtl;
+}
+
+/* Scroll margin for sections */
+.scroll-mt-36 {
+  scroll-margin-top: 200px;
+}
